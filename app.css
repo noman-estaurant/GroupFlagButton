@@ -1,9 +1,62 @@
 #FlagButton{
+	position: fixed;
 	border-radius:50%;
-	width: 80pt;
-	height: 80pt;
-	display: flex;
+	width: 200pt;
+	height: 200pt;
 	justify-content: center;
 	align-items: center;
 	background-color: rgb(255,123,159);
+	-webkit-transition: top 1s;   
+	transition: top 1s;
+	-webkit-transition: left 1s;   
+	transition: left 1s;
+	z-index:2
+
+}
+
+#StatusBlock{
+
+	position: fixed;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	top: 250pt;
+	left: 50pt;
+	width: 600pt;
+	height: 1000pt;
+	border-radius:10%;
+
+}
+
+.mem{
+	width: 400pt;
+	height: 100pt;
+	left: 100pt;
+}
+
+.mem img{
+	position: absolute;
+	height: 100pt;
+	width: 100pt;
+	left:0;
+}
+
+.mem p{
+	position: absolute;
+	top:0;
+	left: 100pt;
+}
+.mem .loadbar{
+	position: absolute;
+	bottom: 0;
+	left: 100;
+}
+
+.host{
+	position: absolute;
+	top: 150pt;
+}
+
+.follower{
+	position: absolute;
+	top: 450pt;
 }
